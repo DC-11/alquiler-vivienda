@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-inquilino {
+  background: #dbdbdb;
+  padding-top: 40px;
+  /* background: -webkit-linear-gradient(bottom, #2a3b47, #dbdbdb);
+  background: -o-linear-gradient(bottom, #2a3b47, #dbdbdb);
+  background: -moz-linear-gradient(bottom, #2a3b47, #dbdbdb);
+  background: linear-gradient(bottom, #2a3b47, #dbdbdb); */
+}
+.inquilinos {
+  margin-left: 99px;
+  margin-right: 84px;
+  color: #fff;
+  background: #2a3b47;
+}
+
+.dato {
+  padding: 10px 15px;
+  font-size: 20px;
+}
+form {
+  display: inline-block;
+}
+.buscar {
+  display: inline-block;
+  margin: 5px 0 5px 430px;
+  background: #c8cdd0;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+.buscar input {
+  width: 200px;
+  display: inline-block;
+  padding: 8px 0;
+  color: #999999;
+  font-size: 16px;
+}
+.buscar button {
+  color: #606060;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.buscar button:active {
+  color: #c8cdd0;
+}

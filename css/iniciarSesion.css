@@ -1,0 +1,130 @@
+:root {
+  --grisF: #dbdbdb;
+  --blanco: #fff;
+  --gris: #fafafa;
+  --azulClaro: #0095f6;
+  --azulBajo: #b2dffc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+  border: none;
+  background: var(--gris);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.contenedor {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--grisF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-banner {
+  width: 700px;
+  height: 450px;
+  background: #fff;
+  display: grid;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "banner form"
+    "footer footer";
+}
+.banner {
+  grid-area: banner;
+  background: url(../images/casa.jpg) no-repeat;
+}
+.banner img {
+  width: 350px;
+  height: 450px;
+  opacity: 0.6;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+form {
+  grid-area: form;
+  padding: 20px 50px;
+}
+
+form h3 {
+  padding: 40px 0;
+  font-family: inherit;
+  text-align: center;
+  color: #262626;
+}
+form input {
+  width: 100%;
+  height: 36px;
+  font-size: 16px;
+  font-family: inherit;
+  margin-bottom: 7px;
+  margin-top: 5px;
+}
+
+.btn input {
+  background: var(--azulBajo);
+  color: #fff;
+  margin: 15px 0;
+}
+
+.btn input:hover {
+  cursor: pointer;
+  color: var(--azulBajo);
+}
+.btn input:active {
+  background: var(--azulBajo);
+}
+
+.contenedor-linea {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.linea {
+  display: inline-block;
+  border-top: 2px solid var(--grisF);
+  width: 45%;
+}
+
+.circulo {
+  display: inline-block;
+  color: #363636;
+  font-size: 25px;
+}
+.enlace {
+  padding: 20px 0;
+  font-family: inherit;
+  text-align: center;
+  font-size: 18px;
+}
+.enlace a {
+  color: var(--azulClaro);
+  text-decoration: none;
+}
+
+.enlace p {
+  display: inline-block;
+  padding-right: 10px;
+}
+footer {
+  text-align: center;
+  color: #8e8e8e;
+  background: var(--grisF);
+  padding: 0 0 20px 0;
+}

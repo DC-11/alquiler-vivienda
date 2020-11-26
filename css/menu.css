@@ -1,0 +1,58 @@
+:root {
+  --azulOscuro: #2a3b47;
+  --grisOscuro: #c8cdd0;
+  --gisClaro: #ffffff;
+}
+@font-face {
+  font-family: "Open sans";
+  src: url("../fonts/fontawesome-webfont.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open sans";
+}
+a {
+  text-decoration: none;
+}
+input {
+  font-family: "Open sans";
+}
+ul,
+li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+li {
+  margin: 0 30px;
+  font-size: 20px;
+}
+li a {
+  color: var(--grisOscuro);
+}
+
+li a:hover {
+  color: var(--gisClaro);
+}
+.contenedor-menu {
+  background: var(--azulOscuro);
+  padding: 20px;
+}
+.logo-menu {
+  width: 80%;
+}
+#logo,
+#logo a {
+  display: inline-block;
+}
+
+#logo {
+  padding: 0 20px;
+}
+#logo a img {
+  width: 150px;
+  height: 30px;
+}
